@@ -1,0 +1,37 @@
+\makeatletter
+\newgeometry{right=6cm, top=3.5cm}
+\begin{titlepage}
+  \definecolor{sublue}{HTML}{052E58}
+  \AddToShipoutPictureBG*{\AtPageLowerLeft{%
+	\color{sublue}\rule{.75\paperwidth}{\paperheight}}}
+  \AddToShipoutPicture*{
+  	\put(\paperwidth,.5\paperheight)
+  	{\makebox(-150,0){\includegraphics[scale=0.25]{cover/logo}}}
+  }
+  \begin{flushright}
+   	{\fontfamily{phv}\selectfont\color{white}
+   	
+   	  {\LARGE\@title}\\
+   	  \vspace*{5.2cm}
+   	  {\Large\@author}\\
+   	  \vfill
+      {Master's thesis, 30 ECTS}\\
+      \vspace*{0.2cm}
+      {Stockholm, Sweden}\\
+      \vspace*{0.2cm}
+      {Spring \thesisyear}\\
+      \vfill
+      {Department of Statistics}\\
+      \vspace{0.2cm}
+      {Stockholm University}\\
+      \vspace*{2cm}
+      {\underline{Supervisor}}\\
+      \vspace*{0.2cm}
+      {\supervisor}\\
+      \vspace*{2cm}
+      {\fontsize{18}{22}No \thesisyear:\thesisnumber}\\
+
+    }       
+  \end{flushright}
+\end{titlepage}
+\restoregeometry
